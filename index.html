@@ -1,70 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>blog</title>
-        <style>
-            header{
-                background-color: rgb(129, 89, 15);
-                color: #000000;
-                text-align: center;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 16px;
-                border: 5px solid #000000;
-               
-            }
-            main{
-                background-color: orange ;
-                color: black;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 16px;
-                border: 5px solid black;
-                display: flex;
-            }
-            img{
-                width: 80px;
-                height: 80px;
-            }
-          .artigo-autor{
-                font-weight:bold ;
-            }
-        </style>
-    </head>
-    <body>
-        
-        <header> 
-             <h1>animes em massa!</h1>
-             <p>vou mostrar todos os itens de anime, e curiosidades da minha loja! </p>
-        </header>
-   
-        <main>
-            <img src="imagem-blog.png" alt="Ilustração em pixel art do personagem Naruto Uzumaki em estilo retrô de videogame. Ele está com sua clássica roupa laranja e azul, a bandana da Vila da Folha e um sorriso confiante, segurando um Rasengan azul brilhante na mão esquerda. Ao fundo, há um cenário pixelado da vila com árvores, casas e céu azul."ANIME BLOG">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <style>
+        header {
+            background-color: rgb(129, 89, 15);
+            color: #000000;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 5px solid #000000;
+
+        }
+
+        main {
+            background-color: orange;
+            color: black;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 5px solid black;
+            display: flex;
+        }
+        article{
+            display: flex;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>animes em massa!</h1>
+        <p>vou mostrar todos os itens de anime, e curiosidades da minha loja! </p>
+    </header>
+    <main>
+        <article>
+
+            <img src="imagem-blog.png"
+                alt="Ilustração em pixel art do personagem Naruto Uzumaki em estilo retrô de videogame. Ele está com sua clássica roupa laranja e azul, a bandana da Vila da Folha e um sorriso confiante, segurando um Rasengan azul brilhante na mão esquerda. Ao fundo, há um cenário pixelado da vila com árvores, casas e céu azul."
+                ANIME BLOG">
             <div>
                 <h2>Meu primeiro post</h2>
                 <p class="artigo-autor">Por: Leonardo Tavares</p>
-                <p>boas vindas a minha loja de animes! aqui vou vender os mais diversos mangás, itens iconicos de personagens e curiosidades sobre eles.</p>
-            <button>​🦊​ <span>0</span>​</button>
-             <button>​🍜​​ <span>0</span>​</button>
+                <p>boas vindas a minha loja de animes! aqui vou vender os mais diversos mangás, itens iconicos de
+                    personagens e curiosidades sobre eles.</p>
+                <button>​🦊​ <span>0</span>​</button>
+                <button>​🍜​​ <span>0</span>​</button>
             </div>
-        </main>
+        </article>
+        <article>
+
+            <img src="imagem-blog.png"
+                alt="Ilustração em pixel art do personagem Naruto Uzumaki em estilo retrô de videogame. Ele está com sua clássica roupa laranja e azul, a bandana da Vila da Folha e um sorriso confiante, segurando um Rasengan azul brilhante na mão esquerda. Ao fundo, há um cenário pixelado da vila com árvores, casas e céu azul."
+                ANIME BLOG">
+            <div>
+                <h2>Meu segundo post</h2>
+                <p class="artigo-autor">Por: Leonardo Tavares</p>
+                <p>boas vindas a minha loja de animes! aqui vou vender os mais diversos mangás, itens iconicos de
+                    personagens e curiosidades sobre eles.</p>
+                <button>​🦊​ <span>0</span>​</button>
+                <button>​🍜​​ <span>0</span>​</button>
+            </div>
+        </article>
+    </main>
 </body>
 <script>
     const botoes = document.querySelectorAll("button");
 
-    botoes.forEach(function(botao){
+    botoes.forEach(function (botao) {
         botao.addEventListener("click", botaoClicado);
-        function botaoClicado(){
-        console.log("fui clicado");
-        let texto = botao.querySelectorAll("span");
-        texto.textContent++;
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelectorAll("span");
+            texto.textContent++;
 
-    }
+        }
 
- })
+    })
 
 </script>
+
 </html>
