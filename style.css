@@ -23,6 +23,12 @@
 
    article {
        display: flex;
+
+       border: 1px solid black;
+
+       margin: 16px;
+       gap: 16px;
+       padding: 16px;
    }
 
    img {
